@@ -38,5 +38,5 @@ cd dialytapp
 npm install
 
 # Start the Expo dev server
-expo start
+npm start | expo start
 ```
