@@ -1,7 +1,7 @@
-import { TabBar } from '@/components/TabBar';
-import { Feather } from '@expo/vector-icons';
-import { Tabs } from 'expo-router';
-import React from 'react';
+import { TabBar } from "@/components/TabBar";
+import { Feather } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
+import React from "react";
 
 const TabLayout = () => {
   return (
@@ -12,7 +12,7 @@ const TabLayout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Home',
+          title: "Home",
           tabBarIcon: ({ color, size }) => (
             <Feather name="home" color={color} size={size} />
           ),
@@ -21,7 +21,7 @@ const TabLayout = () => {
       <Tabs.Screen
         name="explore"
         options={{
-          title: 'Explore',
+          title: "Explore",
           tabBarIcon: ({ color, size }) => (
             <Feather name="compass" color={color} size={size} />
           ),
@@ -30,7 +30,16 @@ const TabLayout = () => {
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Profile',
+          title: "Profile",
+          tabBarIcon: ({ color, size }) => (
+            <Feather name="user" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="Tech"
+        options={{
+          title: "Tech",
           tabBarIcon: ({ color, size }) => (
             <Feather name="user" color={color} size={size} />
           ),
