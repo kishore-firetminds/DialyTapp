@@ -1,21 +1,21 @@
-import React from 'react';
+import React from "react";
 import {
   View,
   Text,
   StyleSheet,
   ScrollView,
   TouchableOpacity,
-} from 'react-native';
-import { Feather } from '@expo/vector-icons';
+} from "react-native";
+import { Feather } from "@expo/vector-icons";
 
 export default function Home() {
   const handleDrawerToggle = () => {
     // TODO: Hook this to drawer navigation
-    console.log('Toggle drawer');
+    console.log("Toggle drawer");
   };
 
   const handleNotifications = () => {
-    console.log('Notifications tapped');
+    console.log("Notifications tapped");
   };
 
   return (
@@ -42,7 +42,6 @@ export default function Home() {
         showsVerticalScrollIndicator={false}
         contentContainerStyle={{ paddingBottom: 40 }}
       >
-       
         {/* Add more FlipCards as needed */}
       </ScrollView>
     </View>
@@ -52,28 +51,28 @@ export default function Home() {
 const styles = StyleSheet.create({
   page: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: "#fff",
   },
   header: {
-    flexDirection: 'row',
+    flexDirection: "row",
     paddingHorizontal: 16,
     paddingVertical: 12,
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    backgroundColor: '#fff',
+    alignItems: "center",
+    justifyContent: "space-between",
+    backgroundColor: "#fff",
     elevation: 2,
     borderBottomWidth: 0.3,
-    borderBottomColor: '#ccc',
+    borderBottomColor: "#ccc",
   },
   headerCenter: {
-    flexDirection: 'row',
-    alignItems: 'center',
+    flexDirection: "row",
+    alignItems: "center",
     gap: 6,
   },
   logoText: {
     fontSize: 18,
-    color: '#0d6efd',
-    fontFamily: 'ComfortaaBold',
+    color: "#0d6efd",
+    fontFamily: "ComfortaaBold",
     marginLeft: 6,
   },
 });

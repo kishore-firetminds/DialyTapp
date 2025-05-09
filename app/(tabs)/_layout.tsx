@@ -1,3 +1,4 @@
+import { AntDesign, Entypo } from "@expo/vector-icons";
 import { TabBar } from "@/components/TabBar";
 import { Feather } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
@@ -12,18 +13,27 @@ const TabLayout = () => {
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "news",
           tabBarIcon: ({ color, size }) => (
-            <Feather name="home" color={color} size={size} />
+            <Entypo name="news" color={color} size={size} />
           ),
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="video"
         options={{
-          title: "Explore",
+          title: "Shorts",
           tabBarIcon: ({ color, size }) => (
-            <Feather name="compass" color={color} size={size} />
+            <Entypo name="video" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="controller"
+        options={{
+          title: "Quizzes",
+          tabBarIcon: ({ color, size }) => (
+            <Entypo name="controller-play" color={color} size={size} />
           ),
         }}
       />
@@ -31,15 +41,6 @@ const TabLayout = () => {
         name="profile"
         options={{
           title: "Profile",
-          tabBarIcon: ({ color, size }) => (
-            <Feather name="user" color={color} size={size} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name="Tech"
-        options={{
-          title: "Tech",
           tabBarIcon: ({ color, size }) => (
             <Feather name="user" color={color} size={size} />
           ),

@@ -1,15 +1,15 @@
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 
-const Page = () => {
+const controller = () => {
   return (
     <View style={styles.container}>
-      <Text>Tech Screen</Text>
+      <Text>controller-play Screen</Text>
     </View>
   );
 };
 
-export default Page;
+export default controller;
 
 const styles = StyleSheet.create({
   container: {
